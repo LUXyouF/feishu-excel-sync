@@ -1,0 +1,368 @@
+/* Excel Sync Plugin Styles */
+.app-container {
+  padding: 16px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e6eb;
+}
+
+.header h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2329;
+}
+
+.header .icon {
+  font-size: 20px;
+}
+
+/* Upload Area */
+.upload-area {
+  background: #ffffff;
+  border: 2px dashed #d9d9d9;
+  border-radius: 8px;
+  padding: 32px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 16px;
+}
+
+.upload-area:hover {
+  border-color: #4a90e2;
+  background: #f0f7ff;
+}
+
+.upload-area.dragging {
+  border-color: #4a90e2;
+  background: #e6f0ff;
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.upload-text {
+  color: #646a73;
+  font-size: 14px;
+}
+
+.upload-text strong {
+  color: #4a90e2;
+}
+
+.upload-hint {
+  color: #8f9399;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* File Info */
+.file-info {
+  background: #f0f5ff;
+  border: 1px solid #d9e2ff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.file-info .file-name {
+  font-weight: 500;
+  color: #1f2329;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.file-info .file-stats {
+  color: #646a73;
+  font-size: 12px;
+}
+
+.file-info .remove-btn {
+  background: none;
+  border: none;
+  color: #646a73;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.file-info .remove-btn:hover {
+  color: #ff4d4f;
+}
+
+/* Section Card */
+.section-card {
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 12px 16px;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  font-weight: 500;
+  color: #1f2329;
+  font-size: 14px;
+}
+
+.section-content {
+  padding: 12px 16px;
+}
+
+/* Field Mapping */
+.field-mapping-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.field-mapping-item:last-child {
+  border-bottom: none;
+}
+
+.mapping-arrow {
+  color: #8f9399;
+}
+
+.matched-badge {
+  background: #d9f7be;
+  color: #389e0d;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.unmatched-badge {
+  background: #fff1e6;
+  color: #d46b08;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.mapping-select {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 12px;
+  background: white;
+}
+
+/* Sync Strategy */
+.strategy-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.strategy-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.strategy-option input {
+  accent-color: #4a90e2;
+}
+
+.strategy-option.recommended {
+  color: #389e0d;
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-primary {
+  background: #4a90e2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #3a7bc8;
+}
+
+.btn-primary:disabled {
+  background: #d9d9d9;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  color: #1f2329;
+}
+
+.btn-secondary:hover {
+  background: #f5f5f5;
+}
+
+/* Progress */
+.progress-container {
+  margin: 16px 0;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4a90e2, #67c23a);
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.progress-text {
+  text-align: center;
+  margin-top: 8px;
+  color: #646a73;
+  font-size: 12px;
+}
+
+/* Result */
+.sync-result {
+  text-align: center;
+  padding: 20px;
+}
+
+.result-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.result-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.result-stats {
+  color: #646a73;
+  font-size: 14px;
+}
+
+.result-stats .success {
+  color: #389e0d;
+  font-weight: 500;
+}
+
+.result-stats .failed {
+  color: #ff4d4f;
+  font-weight: 500;
+}
+
+/* Error Message */
+.error-message {
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  color: #ff4d4f;
+  font-size: 12px;
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #f0f0f0;
+  border-top-color: #4a90e2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Preview Table */
+.preview-table {
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.preview-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.preview-table th {
+  background: #fafafa;
+  padding: 8px;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+  position: sticky;
+  top: 0;
+}
+
+.preview-table td {
+  padding: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 12px;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+  }
+}

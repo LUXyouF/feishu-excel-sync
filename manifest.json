@@ -1,0 +1,38 @@
+{
+  "app_id": "cli_a96a750cad79dbd6",
+  "app_name": {
+    "zh_cn": "Excel数据同步",
+    "en": "Excel Sync"
+  },
+  "description": {
+    "zh_cn": "将本地Excel文件同步到多维表格",
+    "en": "Sync local Excel files to Bitable"
+  },
+  "version": "1.0.0",
+  "extensions": [
+    {
+      "proxy": true,
+      "modules": {
+        "sidebar": {
+          "name": {
+            "zh_cn": "Excel同步",
+            "en": "Excel Sync"
+          },
+          "description": {
+            "zh_cn": "上传Excel文件并同步到当前多维表格",
+            "en": "Upload Excel and sync to current table"
+          },
+          "entry_points": [
+            {
+              "entry_point": "index.html",
+              "viewport": {
+                "width": 480,
+                "height": 640
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
